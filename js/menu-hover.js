@@ -1,5 +1,4 @@
 const menuLinks = document.querySelectorAll(".menu-links a");
-const glitchSound = document.querySelector("#glitch-sound");
 
 menuLinks.forEach(function (link) {
 
@@ -10,11 +9,6 @@ menuLinks.forEach(function (link) {
         void link.offsetWidth;
 
         link.classList.add("glitching");
-
-        if (glitchSound) {
-            glitchSound.currentTime = 0;
-            glitchSound.play().catch(function () {});
-        }
 
         setTimeout(function () {
             link.classList.remove("glitching");
