@@ -1,0 +1,301 @@
+/* ========================================
+   TABLET
+======================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        height: 60px;
+        padding: 0 6%;
+    }
+
+
+    /* HOME */
+
+    .home h1 {
+        font-size: 55px;
+        letter-spacing: 3px;
+    }
+
+    .home h2 {
+        font-size: 14px;
+        letter-spacing: 6px;
+    }
+
+    .home p {
+        font-size: 11px;
+    }
+
+
+    /* HOME 2 */
+
+    .home2 {
+        flex-direction: column;
+        text-align: center;
+        padding: 100px 6%;
+        gap: 35px;
+    }
+
+    .home2-image {
+        width: 250px;
+        height: 375px;
+    }
+
+    .home2-content {
+        max-width: 600px;
+    }
+
+    .home2-content h1 {
+        font-size: 42px;
+    }
+
+    .home2-content h2 {
+        font-size: 13px;
+        letter-spacing: 5px;
+    }
+
+
+    /* MENU */
+
+    .menu-links {
+        max-width: 80%;
+    }
+
+    .menu-links a {
+        font-size: 16px;
+    }
+
+
+    /* FILMS */
+
+    .poster-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* DIRECTOR */
+
+    .director-information {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .director-image {
+        width: 280px;
+        height: 370px;
+        margin: auto;
+    }
+
+    .director-text {
+        text-align: center;
+    }
+
+    .director-text ul {
+        text-align: left;
+        display: inline-block;
+    }
+
+
+    /* SMALL POSTERS */
+
+    .small-posters {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* CREDITS */
+
+    .credits-page h1 {
+        font-size: 50px;
+    }
+
+    .credits-page h2 {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+}
+
+
+/* ========================================
+   MOBILE PHONE
+======================================== */
+
+@media screen and (max-width: 480px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        height: 60px;
+        padding: 0 6%;
+    }
+
+    .page-name {
+        font-size: 9px;
+    }
+
+    .menu-button {
+        font-size: 22px;
+    }
+
+
+    /* HOME */
+
+    .home {
+        padding: 70px 15px;
+    }
+
+    .home h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        min-height: 50px;
+    }
+
+    .home h2 {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .home p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+
+
+    /* ARROW */
+
+    .down {
+        font-size: 32px;
+    }
+
+
+    /* HOME 2 */
+
+    .home2 {
+        padding: 90px 20px;
+        gap: 30px;
+    }
+
+    .home2-image {
+        width: 190px;
+        height: 285px;
+    }
+
+    .home2-content h1 {
+        font-size: 32px;
+        letter-spacing: 2px;
+    }
+
+    .home2-content h2 {
+        font-size: 10px;
+        letter-spacing: 4px;
+    }
+
+    .home2-content h3 {
+        font-size: 13px;
+    }
+
+    .home2-content p {
+        font-size: 11px;
+    }
+
+
+    /* MENU */
+
+    .menu-links {
+        width: 100%;
+        max-width: 85%;
+    }
+
+    .menu-links a {
+        font-size: 15px;
+    }
+
+
+    /* FILMS */
+
+    .films-page {
+        padding: 100px 6% 50px;
+    }
+
+    .rating h1 {
+        font-size: 45px;
+    }
+
+    .stars {
+        font-size: 18px;
+        letter-spacing: 3px;
+    }
+
+    .rating p {
+        font-size: 11px;
+    }
+
+    .poster-grid {
+        gap: 10px;
+    }
+
+
+    /* DIRECTOR */
+
+    .director-page {
+        padding: 95px 6% 50px;
+    }
+
+    .director-image {
+        width: 220px;
+        height: 290px;
+    }
+
+    .director-text h1 {
+        font-size: 28px;
+    }
+
+    .director-text p {
+        font-size: 11px;
+    }
+
+    .small-posters {
+        gap: 10px;
+    }
+
+    .small-posters div {
+        height: 100px;
+    }
+
+
+    /* CREDITS */
+
+    .credits-page {
+        padding: 100px 20px 50px;
+    }
+
+    .credits-page h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+    }
+
+    .credits-page h2 {
+        font-size: 9px;
+        letter-spacing: 4px;
+    }
+
+    .credits-page h3 {
+        font-size: 20px;
+    }
+
+    .credits-section {
+        margin: 40px auto;
+    }
+
+    .credits-section h3 {
+        font-size: 14px;
+        letter-spacing: 4px;
+    }
+
+    .credits-section .credit p {
+        font-size: 11px;
+        line-height: 1.7;
+    }
+}

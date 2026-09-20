@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Insidious - Home</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="page-name">
+            HOME
+        </div>
+        <a href="#" id="sound-toggle" class="sound-button">
+            🔇
+        </a>
+
+        <!-- BURGER MENU -->
+        <!-- Clicking this goes to menu.html -->
+
+        <a href="menu.html" class="menu-button">
+            ☰
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================
+         HOME PAGE 1
+    ========================== -->
+
+    <section class="home" id="home">
+
+        <div class="home-content">
+
+            <!-- JavaScript will type INSIDIOUS here -->
+
+            <h1 id="hero-title"></h1>
+
+            <h2>
+                OUT OF THE FURTHER
+            </h2>
+
+            <p>
+                Insidious is a supernatural horror film that follows
+                a family who discovers that their son is trapped in
+                a mysterious world known as The Further.
+            </p>
+
+
+            <!-- THIS ARROW SCROLLS TO HOME 2 -->
+
+            <a href="#home2" class="down">
+                ↓
+            </a>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         HOME PAGE 2
+    ========================== -->
+
+    <section class="home2" id="home2">
+
+        <!-- LEFT SIDE: POSTER -->
+
+        <div class="home2-image">
+
+            <img src="images/insidious.jpg" alt="Insidious Poster">
+
+        </div>
+
+
+        <!-- RIGHT SIDE: INFORMATION -->
+
+        <div class="home2-content">
+
+            <h1>
+            <span>IN</span>SI<span>DIOUS</span>
+        </h1>
+
+            <h2>
+                OUT OF THE FURTHER
+            </h2>
+
+            <h3>
+                Directed by <span>James Wan</span>
+            </h3>
+
+            <p>
+                Supernatural, Mystery, and Thriller.
+            </p>
+
+            <p>
+                Insidious follows a family whose son becomes trapped
+                in a mysterious realm known as The Further.
+            </p>
+
+            <p>
+                The family must discover the truth behind the
+                supernatural events and find a way to bring him back.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+  <script src="js/main.js"></script>
+
+<audio id="background-music" loop>
+    <source src="sounds/BGmusic.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="glitch-sound" src="sounds/glitch.mp3"></audio>
+
+<script src="js/sounds.js"></script>
+
+<!-- Insidious Moth Easter Egg -->
+<div id="moth-easter-egg">
+    <div class="moth">🦋</div>
+</div>
+
+<div id="further-overlay">
+
+    <div class="red-door"></div>
+
+    <div class="further-message">
+    </div>
+
+    <button id="return-button">RETURN</button>
+
+</div>
+
+<script src="js/moth.js"></script>
+<script src="js/menu-transition.js"></script>
+</body>
+</html>

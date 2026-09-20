@@ -1,0 +1,2091 @@
+/* ========================================
+   BASIC SETTINGS
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Baskerville", "Georgia", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050505;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* ========================================
+   NAVIGATION BAR
+======================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 0 5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 9999;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.8),
+        transparent
+    );
+}
+
+
+/* Page name on the upper left */
+
+.page-name {
+    color: white;
+
+    font-size: 13px;
+
+    letter-spacing: 1px;
+}
+
+
+/* Burger button */
+
+.menu-button {
+    color: #e50914;
+    font-size: 26px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.sound-button {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.sound-button:hover {
+    color: #e50914;
+}
+
+
+
+/* Burger hover */
+
+.menu-button:hover {
+    color: white;
+}
+
+
+/* ========================================
+   HOME PAGE
+======================================== */
+
+.home {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+
+    background:
+
+        radial-gradient(
+            circle at 15% 30%,
+            rgba(150, 0, 0, 0.30),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(100, 0, 0, 0.20),
+            transparent 30%
+        ),
+
+        #050505;
+
+}
+
+
+/* Home content */
+
+.home-content {
+
+    width: 700px;
+
+    max-width: 90%;
+
+}
+
+
+/* Main Insidious title */
+
+.home h1 {
+
+    font-size: 100px;
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+
+    min-height: 95px;
+
+    font-family: "Baskerville", "Georgia", serif;
+
+}
+
+
+/* Red letters */
+
+.home h1 span {
+
+    color: #e50914;
+
+}
+
+
+/* Subtitle */
+
+.home h2 {
+
+    color: #e50914;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    letter-spacing: 9px;
+
+    margin-top: 5px;
+
+    font-family: "Baskerville", "Georgia", serif;
+
+}
+
+
+/* Description */
+
+.home p {
+
+    max-width: 1000px;
+
+    margin: 30px auto;
+
+    color: #cccccc;
+
+    font-size: 20px;
+
+    line-height: 1.7;
+
+    font-family: "Baskerville", "Georgia", serif;
+
+}
+
+
+/* ========================================
+   SCROLL ARROW
+======================================== */
+
+.down {
+
+    display: block;
+
+    margin-top: 30px;
+
+    color: #e50914;
+
+    font-size: 40px;
+
+    text-decoration: none;
+
+    animation: bounce 2s infinite;
+
+}
+
+
+/* Arrow animation */
+
+@keyframes bounce {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(10px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ========================================
+   HOME 2
+======================================== */
+
+.home2 {
+
+    min-height: 100vh;
+
+    padding: 100px 8%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 60px;
+
+
+    background:
+
+        radial-gradient(
+            circle at 10% 50%,
+            rgba(130, 0, 0, 0.25),
+            transparent 30%
+        ),
+
+        #050505;
+
+}
+
+
+/* Home 2 poster */
+
+.home2-image {
+
+    width: 300px;
+
+    height: 450px;
+
+    flex-shrink: 0;
+
+    overflow: hidden;
+
+    border: 1px solid #441111;
+
+}
+
+
+/* Poster image */
+
+.home2-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* Home 2 text */
+
+.home2-content {
+
+    max-width: 1000px;
+
+}
+
+
+/* Insidious title */
+
+.home2-content h1 {
+
+    font-size: 70px;
+
+    font-weight: normal;
+
+    letter-spacing: 3px;
+
+}
+
+
+/* Red part */
+
+.home2-content h1 span {
+
+    color: #e50914;
+
+}
+
+
+/* Subtitle */
+
+.home2-content h2 {
+
+    color: #e50914;
+
+    font-size: 30px;
+
+    font-weight: normal;
+
+    letter-spacing: 6px;
+
+    margin-top: 5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Director */
+
+.home2-content h3 {
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Director name */
+
+.home2-content h3 span {
+
+    color: #e50914;
+
+}
+
+
+/* Description */
+
+.home2-content p {
+
+    color: #cccccc;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* ========================================
+   MENU PAGE
+======================================== */
+
+.menu-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 80px 20px;
+
+
+    background:
+
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(100, 0, 0, 0.20),
+            transparent 40%
+        ),
+
+        #050505;
+
+}
+
+
+/* ========================================
+   MENU LINKS - THE END STYLE
+======================================== */
+
+.menu-links {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: left;
+}
+
+.menu-links a {
+    position: relative;
+    display: inline-block;
+
+    background: transparent;
+    border: none;
+
+    color: #777;
+
+    font-family: "Baskerville", "Georgia", serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    padding: 15px 25px;
+
+    transition:
+        color 0.4s ease,
+        text-shadow 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+/* HOVER - SAME FEEL AS THE END */
+
+.menu-links a:hover {
+    color: #e50914;
+
+    text-shadow:
+        0 0 8px rgba(229, 9, 20, 0.8),
+        0 0 25px rgba(229, 9, 20, 0.4);
+
+    transform: scale(1.05);
+}
+
+
+/* GLITCH EFFECT */
+
+.menu-links a.glitching {
+    animation: menuGlitch 0.7s steps(2, end);
+}
+
+
+@keyframes menuGlitch {
+
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    15% {
+        transform: translate(-4px, 2px);
+        opacity: 0.7;
+    }
+
+    30% {
+        transform: translate(4px, -2px);
+        opacity: 0.9;
+    }
+
+    45% {
+        transform: translate(-3px, -1px);
+        opacity: 0.5;
+    }
+
+    60% {
+        transform: translate(3px, 2px);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translate(-1px, 0);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+
+/* ========================================
+   FILMS / PERSONAL RATE PAGE
+======================================== */
+
+.films-page {
+
+    min-height: 100vh;
+
+    padding: 110px 8% 60px;
+
+    text-align: center;
+
+
+    background:
+
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(120, 0, 0, 0.20),
+            transparent 35%
+        ),
+
+        #050505;
+
+}
+
+
+/* Rating section */
+
+.rating {
+
+    max-width: 750px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+/* Rating number */
+
+.rating h1 {
+
+    font-size: 65px;
+
+    font-weight: normal;
+
+}
+
+
+/* Red /10 */
+
+.rating h1 span {
+
+    color: #e50914;
+
+}
+
+
+/* Stars */
+
+.stars {
+
+    color: #e50914;
+
+    font-size: 25px;
+
+    letter-spacing: 5px;
+
+    margin: 10px 0 25px;
+
+}
+
+
+/* Rating paragraphs */
+
+.rating p {
+
+    color: #cccccc;
+
+    font-size: 25px;
+
+    line-height: 1.7;
+
+    margin: 15px 0;
+
+}
+
+
+/* Red paragraph */
+
+.red-description {
+
+    color: #e50914 !important;
+
+}
+
+
+/* Section title */
+
+.section-title {
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    margin: 25px 0;
+
+}
+
+
+/* Red words */
+
+.section-title span {
+
+    color: #e50914;
+
+}
+
+
+/* ========================================
+   MOVIE POSTERS
+======================================== */
+
+.poster-grid {
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* Individual poster */
+
+.poster {
+
+    aspect-ratio: 2 / 3;
+
+    overflow: hidden;
+
+    background-color: #111;
+
+    border: 1px solid #441111;
+
+    transition: 0.3s;
+
+}
+
+
+/* Poster image */
+
+.poster img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* Poster hover */
+
+.poster:hover {
+
+    transform: scale(1.03);
+
+    border-color: #e50914;
+
+}
+
+
+/* ========================================
+   DIRECTOR PAGE
+======================================== */
+
+.director-page {
+
+    min-height: 100vh;
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 110px 7% 60px;
+
+
+    background:
+
+        radial-gradient(
+            circle at 20% 30%,
+            rgba(120, 0, 0, 0.15),
+            transparent 30%
+        );
+
+}
+
+
+/* Director information */
+
+.director-information {
+
+    display: grid;
+
+    grid-template-columns: 300px 1fr;
+
+    gap: 45px;
+
+    align-items: start;
+
+}
+
+
+/* Director image container */
+
+.director-image {
+
+    width: 100%;
+
+    height: 400px;
+
+    overflow: hidden;
+
+    background-color: #111;
+
+    border: 1px solid #441111;
+
+}
+
+
+/* Director image */
+
+.director-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* Director text */
+
+.director-text {
+
+    padding-top: 15px;
+
+}
+
+
+/* Director name */
+
+.director-text h1 {
+
+    font-size: 50px;
+
+    font-weight: normal;
+
+    margin-bottom: 20px;
+
+}
+
+
+/* Red name */
+
+.director-text h1 span {
+
+    color: #e50914;
+
+}
+
+
+/* Director paragraphs */
+
+.director-text p {
+
+    color: #cccccc;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* Other films heading */
+
+.director-text h3 {
+
+    font-size: 25px;
+
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+}
+
+
+/* Red word */
+
+.director-text h3 span {
+
+    color: #e50914;
+
+}
+
+
+/* Film list */
+
+.director-text ul {
+
+    padding-left: 20px;
+
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 2;
+
+}
+
+
+/* ========================================
+   SMALL POSTERS
+======================================== */
+
+.small-posters {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+}
+
+
+/* Small poster */
+
+.small-posters div {
+
+    height: 120px;
+
+    overflow: hidden;
+
+    border: 1px solid #441111;
+
+    background-color: #111;
+
+}
+
+
+/* Small poster image */
+
+.small-posters img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+
+/* ========================================
+   CREDITS PAGE
+======================================== */
+
+.credits-page {
+
+    min-height: 100vh;
+
+    max-width: 800px;
+
+    margin: auto;
+
+    padding: 120px 20px 60px;
+
+    text-align: center;
+
+
+    background:
+
+        radial-gradient(
+            circle at 50% 30%,
+            rgba(120, 0, 0, 0.20),
+            transparent 40%
+        );
+
+}
+
+
+/* Insidious title */
+
+.credits-page h1 {
+
+    font-size: 70px;
+
+    font-weight: normal;
+
+    letter-spacing: 4px;
+
+}
+
+
+/* Red letters */
+
+.credits-page h1 span {
+
+    color: #e50914;
+
+}
+
+
+/* Subtitle */
+
+.credits-page h2 {
+
+    color: #e50914;
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    letter-spacing: 7px;
+
+}
+
+
+/* Credits title */
+
+.credits-page h3 {
+
+    font-size: 25px;
+
+    font-weight: normal;
+
+    margin: 30px 0;
+
+}
+
+
+/* Credits container */
+
+.credits {
+
+    max-width: 500px;
+
+    margin: auto;
+
+    text-align: left;
+    
+
+}
+
+
+/* Individual credit */
+
+.credit {
+
+    border-left: 2px solid #e50914;
+
+    padding-left: 15px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* Contribution title */
+
+.credit h4 {
+
+    color: #e50914;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* Names */
+
+.credit p {
+
+    color: #cccccc;
+
+    font-size: 30px;
+
+}
+
+
+/* ========================================
+   GENERAL HOVER EFFECT
+======================================== */
+
+a {
+
+    transition: 0.3s;
+}
+/* ========================================
+   CREDITS SECTIONS
+======================================== */
+
+.credits-section {
+
+    width: 100%;
+
+    max-width: 600px;
+
+    margin: 50px auto;
+
+    font-size: 25px;
+
+}
+
+
+/* Section heading */
+
+.credits-section h3 {
+
+    color: #e50914;
+
+    font-size: 18px;
+
+    font-weight: normal;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 25px;
+
+}
+
+
+/* Credit information */
+
+.credits-section .credit {
+
+    border-left: 1px solid #e50914;
+
+    padding-left: 20px;
+
+}
+
+
+/* Credit text */
+
+.credits-section .credit p {
+
+    color: #cccccc;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    margin: 8px 0;
+
+}
+
+
+/* Names */
+
+.credits-section .credit strong {
+
+    color: white;
+
+    font-weight: normal;
+
+}
+
+
+
+/* ========================================
+   IMAGE ANIMATIONS
+======================================== */
+
+.poster,
+.home2-image,
+.director-image,
+.small-posters div {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.poster:hover,
+.home2-image:hover,
+.director-image:hover,
+.small-posters div:hover {
+    transform: scale(1.03);
+    transition: transform 0.4s ease;
+}
+
+
+/* Fade-in animation */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+/* ========================================
+   POSTER HOVER DESCRIPTION
+======================================== */
+
+.poster {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Description box */
+
+.poster-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 15px;
+
+    background: rgba(0, 0, 0, 0.85);
+
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+
+/* Description title */
+
+.poster-info h3 {
+    color: #e50914;
+    font-size: 18px;
+    margin: 0 0 8px;
+}
+
+
+/* Description text */
+
+.poster-info p {
+    color: white;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* Slide description in when hovering */
+
+.poster:hover .poster-info {
+    transform: translateY(0);
+}
+
+.director-poster {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.director-poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.director-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.9);
+    transform: translateY(100%);
+    transition: transform 0.4s ease;
+}
+
+.director-info h3 {
+    color: #e50914;
+    font-size: 16px;
+    margin: 0 0 6px;
+}
+
+.director-info p {
+    color: white;
+    font-size: 11px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.director-poster:hover .director-info {
+    transform: translateY(0);
+}
+
+/* ========================================
+   HORROR GLITCH EFFECT
+======================================== */
+
+.glitch-effect {
+    animation: horrorGlitch var(--glitch-duration, 1s) steps(2, end);
+}
+@keyframes horrorGlitch {
+
+    0% {
+        transform: translate(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+
+    10% {
+        transform: translate(-6px, 0);
+        opacity: 0.8;
+        text-shadow:
+            5px 0 #e50914,
+            -5px 0 white;
+    }
+
+    20% {
+        transform: translate(6px, -2px);
+        opacity: 1;
+        text-shadow:
+            -6px 0 #e50914,
+            6px 0 white;
+    }
+
+    30% {
+        transform: translate(-4px, 2px);
+        opacity: 0.4;
+        text-shadow:
+            7px 0 #e50914,
+            -7px 0 white;
+    }
+
+    40% {
+        transform: translate(5px, 0);
+        opacity: 1;
+        text-shadow:
+            -5px 0 #e50914,
+            5px 0 white;
+    }
+
+    50% {
+        transform: translate(-7px, -1px);
+        opacity: 0.6;
+        text-shadow:
+            8px 0 #e50914,
+            -8px 0 white;
+    }
+
+    60% {
+        transform: translate(7px, 1px);
+        opacity: 1;
+        text-shadow:
+            -6px 0 #e50914,
+            6px 0 white;
+    }
+
+    70% {
+        transform: translate(-3px, 0);
+        opacity: 0.5;
+        text-shadow:
+            4px 0 #e50914,
+            -4px 0 white;
+    }
+
+    80% {
+        transform: translate(4px, -1px);
+        opacity: 1;
+        text-shadow:
+            -3px 0 #e50914,
+            3px 0 white;
+    }
+
+    90% {
+        transform: translate(-2px, 0);
+        opacity: 0.8;
+        text-shadow:
+            2px 0 #e50914,
+            -2px 0 white;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+        text-shadow: none;
+    }
+}
+
+/* ========================================
+   INSIDIOUS MOTH EASTER EGG
+======================================== */
+
+.moth {
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+    font-size: 70px;
+    opacity: 0.75;
+
+    cursor: pointer;
+    pointer-events: auto;
+
+    filter: grayscale(1) brightness(0.35);
+
+    animation: mothFlyAround 30s ease-in-out infinite;
+}
+
+@keyframes mothFlyAround {
+
+    0% {
+        left: 10%;
+        top: 20%;
+        transform: rotate(-10deg);
+    }
+
+    15% {
+        left: 30%;
+        top: 12%;
+        transform: rotate(15deg);
+    }
+
+    30% {
+        left: 55%;
+        top: 25%;
+        transform: rotate(-5deg);
+    }
+
+    45% {
+        left: 75%;
+        top: 15%;
+        transform: rotate(10deg);
+    }
+
+    60% {
+        left: 85%;
+        top: 50%;
+        transform: rotate(-15deg);
+    }
+
+    75% {
+        left: 60%;
+        top: 70%;
+        transform: rotate(8deg);
+    }
+
+    90% {
+        left: 25%;
+        top: 60%;
+        transform: rotate(-8deg);
+    }
+
+    100% {
+        left: 10%;
+        top: 20%;
+        transform: rotate(-10deg);
+    }
+}
+
+/* ========================================
+   THE FURTHER OVERLAY
+======================================== */
+
+#further-overlay {
+    position: fixed;
+    inset: 0;
+    background: radial-gradient(
+        circle at center,
+        rgba(80, 0, 0, 0.18),
+        transparent 45%
+    ),
+    #020202;
+    z-index: 10000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#further-overlay.active {
+    display: flex;
+    animation: furtherFade 0.5s ease forwards;
+}
+
+@keyframes furtherFade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ========================================
+   THE RED DOOR
+======================================== */
+
+.red-door {
+    position: absolute;
+    width: 180px;
+    height: 360px;
+    background: #520000;
+    border: 4px solid #250000;
+    box-shadow:
+        0 0 25px rgba(120, 0, 0, 0.8),
+        0 0 80px rgba(80, 0, 0, 0.5);
+
+    transform: scale(0);
+    cursor: pointer;
+    z-index: 3;
+
+    animation: doorAppear 2s ease forwards;
+
+    transition:
+        filter 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.red-door:hover {
+    filter: brightness(1.3);
+
+    box-shadow:
+        0 0 35px rgba(229, 9, 20, 0.9),
+        0 0 100px rgba(120, 0, 0, 0.8);
+}
+
+.red-door::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #111;
+    right: 20px;
+    top: 50%;
+}
+
+@keyframes doorAppear {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.red-door.opening {
+    animation: doorOpen 1.2s ease forwards;
+}
+
+@keyframes doorOpen {
+    0% {
+        transform: scale(1) rotateY(0deg);
+        transform-origin: left center;
+    }
+
+    30% {
+        transform: scale(1.02) rotateY(-10deg);
+    }
+
+    100% {
+        transform: scale(1) rotateY(-100deg);
+        opacity: 0;
+    }
+}
+
+
+/* Red glow */
+
+@keyframes doorGlow {
+
+    0% {
+        box-shadow:
+            0 0 20px rgba(120, 0, 0, 0.8),
+            0 0 60px rgba(120, 0, 0, 0.5),
+            inset 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    50% {
+        box-shadow:
+            0 0 35px rgba(220, 0, 0, 0.9),
+            0 0 100px rgba(120, 0, 0, 0.7),
+            inset 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+    100% {
+        box-shadow:
+            0 0 20px rgba(120, 0, 0, 0.8),
+            0 0 60px rgba(120, 0, 0, 0.5),
+            inset 0 0 30px rgba(0, 0, 0, 0.7);
+    }
+
+}
+
+
+/* Message */
+
+.further-message {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    animation: messageAppear 1s ease 2s forwards;
+}
+
+.further-message p {
+    font-family: "Baskerville", Georgia, serif;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 0 0 15px black;
+}
+
+.further-message span {
+    display: block;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #777;
+}
+
+@keyframes messageAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* ========================================
+   GLITCH EFFECT
+======================================== */
+
+.glitch {
+    animation: smoothGlitch 0.75s ease-in-out;
+}
+
+@keyframes smoothGlitch {
+
+    0% {
+        transform: translate(0);
+        filter: none;
+    }
+
+    20% {
+        transform: translate(-2px, 1px);
+        filter: brightness(1.2);
+    }
+
+    40% {
+        transform: translate(2px, -1px);
+        filter: contrast(1.2);
+    }
+
+    60% {
+        transform: translate(-1px, 1px);
+        filter: brightness(0.8);
+    }
+
+    80% {
+        transform: translate(1px, -1px);
+        filter: contrast(1.1);
+    }
+
+    100% {
+        transform: translate(0);
+        filter: none;
+    }
+}
+/* ========================================
+   MOTH TRAIL
+======================================== */
+
+.moth-trail {
+    position: fixed;
+
+    background: #e50914;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+
+    z-index: 9997;
+
+    opacity: 0;
+
+    box-shadow:
+        0 0 5px #e50914,
+        0 0 12px rgba(229, 9, 20, 0.5);
+
+    animation: mothTrailFade 1.5s ease-out forwards;
+}
+
+
+@keyframes mothTrailFade {
+
+    0% {
+        opacity: 0.65;
+        transform: scale(1);
+    }
+
+    40% {
+        opacity: 0.35;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(
+            -8px,
+            15px
+        ) scale(0);
+    }
+
+}
+/* ========================================
+   RED DOOR INTERACTION
+======================================== */
+
+.red-door {
+    cursor: pointer;
+
+    transition:
+        filter 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+/* Door hover */
+
+.red-door:hover {
+    filter: brightness(1.25);
+
+    box-shadow:
+        0 0 35px rgba(220, 0, 0, 0.9),
+        0 0 100px rgba(120, 0, 0, 0.7),
+        inset 0 0 30px rgba(0, 0, 0, 0.8);
+}
+
+
+/* Small hint that the door can be clicked */
+
+.red-door:hover::after {
+    box-shadow:
+        0 0 8px #e50914;
+}
+
+
+/* ========================================
+   DOOR OPENING
+======================================== */
+
+.red-door.opening {
+    animation:
+        doorOpen 1.2s ease-in forwards;
+}
+
+
+/* Door rotates open */
+
+@keyframes doorOpen {
+
+    0% {
+        transform: scale(1) rotateY(0deg);
+        transform-origin: left center;
+    }
+
+    30% {
+        transform: scale(1.02) rotateY(-8deg);
+    }
+
+    100% {
+        transform: scale(1) rotateY(-100deg);
+        opacity: 0.15;
+    }
+
+}
+
+
+/* ========================================
+   DARKNESS BEHIND THE DOOR
+======================================== */
+
+#further-overlay::after {
+
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 360px;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(0, 0, 0, 0.3),
+            #000 70%
+        );
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    transition: opacity 1s ease;
+
+}
+
+
+.red-door.opening {
+    animation: doorOpenSmooth 1.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+}
+
+@keyframes doorOpenSmooth {
+
+    0% {
+        transform: scale(1) rotateY(0deg);
+        opacity: 1;
+        filter: brightness(1);
+    }
+
+    15% {
+        transform: scale(1.01) rotateY(-2deg);
+        filter: brightness(1.15);
+    }
+
+    30% {
+        transform: scale(1.015) rotateY(2deg);
+        filter: brightness(0.8);
+    }
+
+    45% {
+        transform: scale(1.02) rotateY(-5deg);
+        filter: brightness(1.2);
+    }
+
+    60% {
+        transform: scale(1.02) rotateY(-20deg);
+        filter: brightness(0.7);
+    }
+
+    75% {
+        transform: scale(1.01) rotateY(-45deg);
+        opacity: 0.9;
+    }
+
+    90% {
+        transform: scale(1) rotateY(-75deg);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1) rotateY(-100deg);
+        opacity: 0;
+        filter: brightness(0.3);
+    }
+}
+
+/* ========================================
+   FINAL MESSAGE
+======================================== */
+
+.further-message.final-message {
+    animation:
+        finalMessageAppear 1.5s ease forwards;
+}
+
+
+@keyframes finalMessageAppear {
+
+    0% {
+        opacity: 0;
+        transform: translateY(15px);
+        filter: blur(8px);
+    }
+
+    60% {
+        opacity: 0.7;
+        filter: blur(2px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+
+}
+#return-button {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 28px;
+    background: transparent;
+    border: 1px solid #555;
+    color: #aaa;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.3s ease;
+    z-index: 5;
+}
+
+#return-button:hover {
+    color: white;
+    border-color: #e50914;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.6);
+}
+
+#further-overlay.active #return-button {
+    opacity: 1;
+    transition-delay: 2s;
+}
+#return-button {
+    position: absolute;
+    bottom: 45px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 12px 30px;
+
+    background: transparent;
+    border: 1px solid #555;
+
+    color: #aaa;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    cursor: pointer;
+
+    z-index: 20;
+
+    opacity: 1;
+
+    transition: all 0.3s ease;
+}
+
+#return-button:hover {
+    color: white;
+    border-color: #e50914;
+
+    box-shadow:
+        0 0 15px rgba(229, 9, 20, 0.7),
+        0 0 30px rgba(229, 9, 20, 0.3);
+}
+/* ========================================
+   CREDITS ENDING
+======================================== */
+
+.credits-ending {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    padding-bottom: 80px;
+}
+
+#end-button {
+    position: relative;
+
+    background: transparent;
+    border: none;
+
+    color: #777;
+
+    font-family: "Baskerville", "Georgia", serif;
+    font-size: 18px;
+
+    letter-spacing: 8px;
+
+    cursor: pointer;
+
+    padding: 15px 25px;
+
+    transition:
+        color 0.4s ease,
+        text-shadow 0.4s ease,
+        transform 0.4s ease;
+}
+
+#end-button:hover {
+    color: #e50914;
+
+    text-shadow:
+        0 0 8px rgba(229, 9, 20, 0.8),
+        0 0 25px rgba(229, 9, 20, 0.4);
+
+    transform: scale(1.05);
+}
+
+#end-button.glitching {
+    animation: creditsGlitch 0.7s steps(2, end);
+}
+
+@keyframes creditsGlitch {
+
+    0% {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    15% {
+        transform: translate(-4px, 2px);
+        opacity: 0.7;
+    }
+
+    30% {
+        transform: translate(4px, -2px);
+        opacity: 0.9;
+    }
+
+    45% {
+        transform: translate(-2px, -1px);
+        opacity: 0.5;
+    }
+
+    60% {
+        transform: translate(3px, 2px);
+        opacity: 0.8;
+    }
+
+    75% {
+        transform: translate(-1px, 0);
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#end-button::before,
+#end-button::after {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    right: 0;
+
+    height: 1px;
+
+    background: #e50914;
+
+    opacity: 0;
+
+    transition: opacity 0.3s ease;
+}
+
+#end-button::before {
+    top: 0;
+}
+
+#end-button::after {
+    bottom: 0;
+}
+
+#end-button:hover::before,
+#end-button:hover::after {
+    opacity: 0.6;
+}
+/* ========================================
+   PAGE SLIDE TRANSITION
+======================================== */
+
+body {
+    animation: pageEnter 0.6s ease forwards;
+}
+
+@keyframes pageEnter {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+body.page-leaving {
+    animation: pageLeave 0.6s ease forwards;
+}
+
+@keyframes pageLeave {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+}
