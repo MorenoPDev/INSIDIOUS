@@ -263,7 +263,26 @@
     .small-posters div {
         height: 100px;
     }
+   /* POSTER HOVER TEXT */
 
+.director-poster {
+    position: relative;
+    overflow: hidden;
+}
+
+.director-info {
+    padding: 10px 8px;
+}
+
+.director-info h3 {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.director-info p {
+    font-size: 9px;
+    line-height: 1.35;
+}
 
     /* CREDITS */
 
